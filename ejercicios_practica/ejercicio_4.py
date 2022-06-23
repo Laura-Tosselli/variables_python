@@ -11,6 +11,9 @@
 
 # Ingrese tres palabras y arme un acrónimo con ellas
 # Si desea puede modificar el código para ingresar más palabras
+from sklearn.utils import resample
+
+
 print('Ingrese palabra 1:')
 palabra_1 = str(input())
 
@@ -23,3 +26,5 @@ palabra_3 = str(input())
 # De cada palabra debe tomar la primera letra y armar el acrónimo
 # Ejemplo: Alumbrado, barrido y limpieza --> ABL
 # Imprimir el resultado en pantalla
+res = str(palabra_1[0]) + str(palabra_2[0]) + str(palabra_3[0])
+print('El acrónimo es: ' + str(res))
